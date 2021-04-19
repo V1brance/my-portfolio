@@ -37,3 +37,18 @@ nav a {
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me,
+.my-projects,
+.contact-me {
+  margin-left: 5vw;
+  margin-bottom: 2vh;
+  border-left: solid 0.5vw darkblue;
+  padding-left: 1vw;
+  padding-bottom: 2vh;
+}
