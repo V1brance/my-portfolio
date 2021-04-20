@@ -19,9 +19,11 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  padding: 1vh 3vw;
+  padding: 0.5vh 3vw;
+  margin: 0.5vh 0vw;
   font-size: 24px;
   height: 100%;
+  border-left: solid 2px maroon;
 }
 
 nav a {
@@ -29,6 +31,10 @@ nav a {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: maroon;
 }
 
 #landing-text {
@@ -48,7 +54,28 @@ main {
 .contact-me {
   margin-left: 5vw;
   margin-bottom: 2vh;
-  border-left: solid 0.5vw darkblue;
+  border-left: solid 0.5vw maroon;
   padding-left: 1vw;
   padding-bottom: 2vh;
+}
+
+.about-me h2 {
+  font-size: 40px;
+  margin: 1vh 0;
+}
+
+.about-content {
+  display: flex;
+  width: 90vw;
+  height: 25vh;
+}
+
+.about-content img {
+  box-shadow: 10px 10px 10px lightblue;
+}
+
+.about-content p {
+  margin-left: 3vw;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
 }
