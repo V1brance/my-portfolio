@@ -4,15 +4,13 @@
 
 nav {
   display: flex;
-  height: 5vh;
-  width: 100vw;
+  height: 75px;
 }
 
 nav ul {
-  width: 50vw;
   display: flex;
   align-items: center;
-  margin-left: 70vw;
+  margin-left: 65vw;
 }
 
 nav ul li {
@@ -66,6 +64,11 @@ main {
   color: maroon;
 }
 
+.about-me {
+  height: 40vh;
+  overflow: auto;
+}
+
 .about-content {
   display: flex;
   width: 90vw;
@@ -78,7 +81,7 @@ main {
 
 .about-content p {
   margin-left: 3vw;
-  font-size: 22px;
+  font-size: 2vh;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -91,9 +94,11 @@ main {
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .big-card {
+  justify-content: center;
   width: 100%;
 }
 
@@ -108,7 +113,15 @@ main {
   margin-bottom: 1.5vh;
 }
 
-.project-card img:hover {
+.big-card img {
+  width: 50vw;
+  box-shadow: 10px 10px 10px lightblue;
+  margin-left: 20vw;
+  margin-bottom: 3vh;
+}
+
+.project-card img:hover,
+.big-card img:hover {
   box-shadow: 10px 10px 10px maroon;
   cursor: pointer;
 }
@@ -121,9 +134,26 @@ main {
   font-family: "Open Sans", sans-serif;
 }
 
+.big-card figcaption {
+  font-size: 24px;
+}
+
 .transition-line {
   width: 80vw;
   border-bottom: 2px solid maroon;
   margin-bottom: 2vh;
   margin-left: 10vw;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-links a {
+  font-size: 22px;
+  margin-top: 1vh;
+  margin-right: 3vw;
+  color: black;
+  text-decoration: none;
 }

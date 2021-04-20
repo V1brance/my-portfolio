@@ -16,14 +16,14 @@
   <body>
     <nav>
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#my-projects">Projects</a></li>
+        <li><a href="#contact-me">Contact</a></li>
       </ul>
     </nav>
     <main>
       <h1 id="landing-text">Hello and Welcome to my Portfolio!</h1>
-      <div class="about-me">
+      <div class="about-me" id=#about-me>
         <h2>About Me</h2>
         <div class="about-content">
           <img src="./assets/imgs/about-me.jpg" alt="Placeholder img for about me section">
@@ -48,12 +48,12 @@
         </div>
       </div>
       <div class="transition-line"></div>
-      <div class="my-projects">
+      <div class="my-projects" id="my-projects">
         <h2>My Projects</h2>
         <div class='row'>
           <div class="big-card">
             <figure>
-              <img src="#" alt="A large image showcasing my biggest project">
+              <img src="./assets/imgs/big-project.jpg" alt="A large image showcasing my biggest project">
               <figcaption>My Biggest Project Yet</figcaption>
             </figure>
           </div>
@@ -78,11 +78,13 @@
         </div>
       </div>
       <div class="transition-line"></div>
-      <div class="contact-me">
+      <div class="contact-me" id="contact-me">
         <h2>Contact Me</h2>
-        <a href="#">My Github</a>
-        <a href="#">Twitter</a>
-        <a href="#">Email</a>
+        <div class="contact-links">
+          <a href="#">My Github - V1brance</a>
+          <a href="#">Twitter - @9samb</a>
+          <a href="#">Email - sbrookshire99@gmail.com </a>
+        </div>
       </section>
     </main>
   </body>
