@@ -1,7 +1,5 @@
-html {
+* {
   box-sizing: border-box;
-  background-color: #f3f3f3;
-  color: #262322;
 }
 
 nav {
@@ -11,10 +9,10 @@ nav {
 }
 
 nav ul {
-  width: 50%;
+  width: 50vw;
   display: flex;
   align-items: center;
-  margin-left: 68vw;
+  margin-left: 70vw;
 }
 
 nav ul li {
@@ -59,9 +57,13 @@ main {
   padding-bottom: 2vh;
 }
 
-.about-me h2 {
+.about-me h2,
+.my-projects h2,
+.contact-me h2 {
   font-size: 40px;
   margin: 1vh 0;
+  font-family: "Open Sans", sans-serif;
+  color: maroon;
 }
 
 .about-content {
@@ -76,6 +78,52 @@ main {
 
 .about-content p {
   margin-left: 3vw;
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Open Sans", sans-serif;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10vw;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.big-card {
+  width: 100%;
+}
+
+.project-card {
+  width: 30%;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 10px lightblue;
+  margin-bottom: 1.5vh;
+}
+
+.project-card img:hover {
+  box-shadow: 10px 10px 10px maroon;
+  cursor: pointer;
+}
+
+.project-card figcaption,
+.big-card figcaption {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+.transition-line {
+  width: 80vw;
+  border-bottom: 2px solid maroon;
+  margin-bottom: 2vh;
+  margin-left: 10vw;
 }
