@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+/* 
+The idea here is to have a nav bar centered on the right side of the screen which
+will automatically shift to allow for a responsive layout with minimal css
+ */
 nav {
   display: flex;
   height: 75px;
@@ -13,6 +17,10 @@ nav ul {
   margin-left: 65vw;
 }
 
+/* 
+The primary content here is using vh and vw units to automatically resize the nav
+bar so that as the screen shifts in size, everything remains relatively consistent
+*/
 nav ul li {
   list-style: none;
   padding: 0.5vh 3vw;
@@ -29,10 +37,20 @@ nav a {
   text-decoration: none;
 }
 
+/* 
+I anted a little effect so that when you hovered a nav element it was obvious that it was a link
+so I added a tiny element to cause the color to change to match other header text and border
+colors 
+*/
+
 nav a:hover {
   color: maroon;
 }
 
+/* 
+ID for the header of the site, want it to take over the entire portion of the flexbox
+so flex grow is utilized here
+*/
 #landing-text {
   flex-grow: 1;
   font-size: 60px;
@@ -44,6 +62,12 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+/* 
+These next two sections are consolidated heavily because I wanted consistent styling
+in terms of positioning of each section across the page as well as consistent styling
+in the headers in terms of size and color
+*/
 
 .about-me,
 .my-projects,
@@ -91,6 +115,11 @@ main {
   margin-right: 10vw;
 }
 
+/* 
+The project section utilizes a large amount of nested flexboxes to create a format that I was 
+happy with. This is utilizied further down in the documnet to create a responsive design.
+*/
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -105,6 +134,13 @@ main {
 .project-card {
   width: 30%;
 }
+
+/* 
+The images in the project section have a nice light blue shadow to allow for the elements to 
+pop off the page a little as the color theming is not to flashy. When the images are hovered over,
+because I do not have any actual projects to include at the moment, the color of the shadow is 
+changed to match the side borders and text
+*/
 
 .project-card img {
   width: 100%;
@@ -138,6 +174,10 @@ main {
   font-size: 24px;
 }
 
+/* 
+The transition line div is a simple element to allow for seperation of the different elements on
+the page without inconsistent styling across the elements
+*/
 .transition-line {
   width: 80vw;
   border-bottom: 2px solid maroon;
@@ -150,10 +190,39 @@ main {
   flex-direction: column;
 }
 
+/* 
+The contact links don't go anywhere (sorry grader) but in theory they could.
+When you hover over them it bolds it and changes color to aid in readability
+*/
+
 .contact-links a {
   font-size: 22px;
-  margin-top: 1vh;
+  margin-top: 2vh;
   margin-right: 3vw;
   color: black;
   text-decoration: none;
+}
+
+.contact-links a:hover {
+  color: maroon;
+  font-weight: bold;
+}
+
+/* 
+I ended up not needing a huge amount of responsive elements because
+I tried to add them in as a base. When the screen shrinks to much
+the aprokect cards flex into a column layout with near centered
+margins. 
+*/
+
+@media screen and (max-width: 900px) {
+  .row {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .project-card {
+    width: 50%;
+    margin-left: 25vw;
+  }
 }
